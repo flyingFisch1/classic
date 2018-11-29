@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ClassicPublicity.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="~/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+
+    <!-- ScrollUpSlider-->
+    <link rel="stylesheet" href="Content/style1.css" />
+    <link rel="stylesheet" href="Content/ress.min.css" />
+    <!-- Bootstrap CSS File -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+
+    <!--MenuSlider-->
+    <link href="Content/style2.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Main Stylesheet File -->
+    <link href="Content/style.css" rel="stylesheet">
+
+    <!--Projects Stylesheet files-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:600,800" rel="stylesheet">
+    <link href="Content/Projects/styles_projects.css" rel="stylesheet" type="text/css" />
+    <link href="Content/menu/hamburger-menu.css" rel="stylesheet" type="text/css" />
+    <link href="Content/menu/style2.css" rel="stylesheet" type="text/css" /> 
+    <link href="Content/Clients/client_style.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Contact/animate.css" rel="stylesheet" type="text/css" />
+  
+
+</head>
+
+<body>
+    
+    <form runat="server">
+        
+        <div class="hamburger" id="hamburger">
+        <div class="hamburger__line hamburger__line--01">
+            <div class="hamburger__line-in hamburger__line-in--01"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--02">
+            <div class="hamburger__line-in hamburger__line-in--02"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--03">
+            <div class="hamburger__line-in hamburger__line-in--03"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--cross01">
+            <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+        </div>
+        <div class="hamburger__line hamburger__line--cross02">
+            <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+        </div>
+    </div>
+
+
+
+    <ul class="hamburger-navigation">
+        <li>
+            <a><asp:LinkButton ID="lnkHome" runat="server" OnClick="lnkHome_Click">Home</asp:LinkButton></a></li>
+        <li>
+            <a><asp:LinkButton ID="lnkAboutUs" runat="server" OnClick="lnkAboutUs_Click">Classic</asp:LinkButton></a></li>
+        <li>
+           <a> <asp:LinkButton ID="lnkProjects" runat="server" OnClick="lnkShowCase_Click">Showcase</asp:LinkButton></a></li>
+        <li>
+            <a><asp:LinkButton ID="lnkNews" runat="server" OnClick="lnkNews_Click">News</asp:LinkButton></a></li>
+        <li>
+            <a><asp:LinkButton ID="lnkContact" runat="server" OnClick="lnkContact_Click">Say Hello</asp:LinkButton></a>
+        </li>
+    </ul>
+    <!-- end hamburger-navigation -->
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="shape-overlays__path" d="M 0 100 C 50 100 50 100 100 100 V 100 H 0"></path>
+        <path class="shape-overlays__path" d="M 0 100 C 50 100 50 100 100 100 V 100 H 0"></path>
+        <path class="shape-overlays__path" d="M 0 100 C 50 100 50 100 100 100 V 100 H 0"></path>
+    </svg>
+
+    <!-- end hamburger -->
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/easings.js"></script>
+    <script type="text/javascript" src="Scripts/hamburger.min.js"></script>
+      <script src="Scripts/Projects/main_projects.js"></script>
+    <script   src="Scripts/Clients/pen.js"></script>
+</body>
+</html>
